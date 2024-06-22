@@ -15,5 +15,5 @@ export default {
       type: DataTypes.DATE,
       allowNull: false,
     },
-  }
+  },
 };
