@@ -1,6 +1,6 @@
 import fetch from 'jest-fetch-mock'; // eslint-disable-line import/no-extraneous-dependencies, import/newline-after-import
-import config from './config/config';
-import { createLoggerWithOptions } from './config/winston';
+import config from './src/config/config';
+import { createLoggerWithOptions } from './src/config/winston';
 
 /**
  * Some tests make use of supertest which sets up the app straight from root index.js

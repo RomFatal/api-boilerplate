@@ -55,5 +55,8 @@ node_modules
 build/nodejs
 build/yarn
 
-# vscode config files
+# Vscode config files
 .vscode
+
+# Lock files
+package-lock.json

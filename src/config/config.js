@@ -13,14 +13,14 @@ const envVarsSchema = Joi.object({
     .valid('development', 'production', 'test', 'provision')
     .default('development'),
   PORT: Joi.number()
-    .default(4000),
+    .default(3000),
   API_VERSION: Joi.string()
     .default('1')
     .description('API Version'),
   JWT_SECRET: Joi.string().required()
     .description('JWT Secret required to sign'),
   UNIQUE_NAME_PG_DB: Joi.string()
-    .default('api')
+    .default('GPTs-Test')
     .description('Postgres database name'),
   UNIQUE_NAME_PG_TEST_DB: Joi.string()
     .default('api-test')

@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import os from 'os';
 
-import pjson from '../../package.json';
+import pjson from '../../../package.json';
 
 export const developmentFormatter = (printf) => printf((info) => `${info.timestamp} ${info.level}: ${info.message}`);
 

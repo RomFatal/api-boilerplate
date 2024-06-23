@@ -2,7 +2,7 @@
 
 import request from 'supertest';
 import httpStatus from 'http-status';
-import app from '../../index';
+import app from '../../config/express';
 import config from '../../config/config';
 import db from '../../config/sequelize';
 

@@ -1,10 +1,10 @@
-import { loggers } from 'winston';
-import config from './config/config';
-import app from './config/express';
+const { loggers } = require('winston');
+// const debug = require('debug')('amida-api-boilerplate:index');
+const config = require('./config/config');
+const app = require('./config/express');
 /* eslint-disable no-unused-vars */
-import db from './config/sequelize';
+const db = require('./config/sequelize');
 
-const debug = require('debug')('amida-api-boilerplate:index');
 /* eslint-enable no-unused-vars */
 
 // Get default logger
@@ -35,4 +35,4 @@ db.sequelize
     }
   });
 
-export default app;
+module.exports = app;

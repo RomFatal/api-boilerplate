@@ -3,9 +3,10 @@
 import request from 'supertest';
 import httpStatus from 'http-status';
 import jwt from 'jsonwebtoken';
-import app from '../../index';
-import config from '../../config/config';
-import db from '../../config/sequelize';
+import config from '../../../config/config';
+
+import app from '../../../config/express';
+import db from '../../../config/sequelize';
 
 const apiVersionPath = `/api/v${config.apiVersion}`;
 
