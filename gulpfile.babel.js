@@ -20,6 +20,7 @@ gulp.task('clean', (done) => {
         ['dist/**', 'dist/.*', 'coverage/**', '!dist', '!coverage'],
       );
     })
+    // eslint-disable-next-line no-console
     .catch((e) => { console.log(e.message); });
   return done();
 });
@@ -45,7 +46,7 @@ gulp.task('babel', () => gulp.src([...paths.js, '!gulpfile.babel.js'], { base: '
 // Start server with restart on file changes
 gulp.task('nodemon', gulp.series('copy', 'babel', (done) => {
   plugins.nodemon({
-    script: path.join('dist', 'index.js'),
+    script: path.join('dist/src', 'index.js'),
     ext: 'js',
     ignore: ['node_modules/**/*.js', 'dist/**/*.js'],
     tasks: ['copy', 'babel'],
