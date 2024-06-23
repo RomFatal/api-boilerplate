@@ -2,8 +2,8 @@ import Sequelize from 'sequelize';
 import fs from 'fs';
 import path from 'path';
 import _ from 'lodash';
-import config from './config';
-import logger from './winston/get-default-logger';
+import config from '../../config/config';
+import logger from '../../config/winston/get-default-logger';
 
 const db = {};
 
@@ -35,7 +35,7 @@ const sequelize = new Sequelize(
   sequelizeOptions,
 );
 
-const modelsDir = path.normalize(`${__dirname}/../server/models`);
+const modelsDir = path.normalize(`${__dirname}/../models`);
 
 // loop through all files in models directory ignoring hidden files and this file
 fs.readdirSync(modelsDir)

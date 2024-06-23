@@ -1,5 +1,5 @@
 import httpStatus from 'http-status';
-import db from '../../../config/sequelize';
+import db from '../../services/sequelize';
 
 const { User } = db;
 

@@ -6,7 +6,7 @@ import jwt from 'jsonwebtoken';
 import config from '../../../config/config';
 
 import app from '../../../index';
-import db from '../../../config/sequelize';
+import db from '../../services/sequelize';
 
 const apiVersionPath = `/api/v${config.apiVersion}`;
 
