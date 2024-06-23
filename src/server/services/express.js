@@ -8,10 +8,10 @@ import httpStatus from 'http-status';
 import expressWinston from 'express-winston';
 import expressValidation from 'express-validation';
 import helmet from 'helmet';
-import config from './config';
-import logger from './winston/get-default-logger';
-import routes from '../server/routes/index.route';
-import APIError from '../server/helpers/APIError';
+import config from '../../config/config';
+import logger from '../../config/winston/get-default-logger';
+import routes from '../routes/index.route';
+import APIError from '../helpers/APIError';
 
 // Define default HTTP logger instance (use default logger instance)
 const winstonInstance = logger;
