@@ -5,7 +5,7 @@ import httpStatus from 'http-status';
 import jwt from 'jsonwebtoken';
 import config from '../../../config/config';
 
-import app from '../../../config/express';
+import app from '../../../index';
 import db from '../../../config/sequelize';
 
 const apiVersionPath = `/api/v${config.apiVersion}`;
