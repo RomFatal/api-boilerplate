@@ -13,7 +13,7 @@ const envVarsSchema = Joi.object({
     .valid('development', 'production', 'test', 'provision')
     .default('development'),
   PORT: Joi.number()
-    .default(3000),
+    .default(5000),
   API_VERSION: Joi.string()
     .default('1')
     .description('API Version'),
