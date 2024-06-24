@@ -46,6 +46,7 @@ if (config.env === 'development') {
     colorStatus: true, // Color the status code (default green, 3XX cyan, 4XX yellow, 5XX red).
   }));
 }
+app.get('/health-check', (req, res) => res.send('OK'));
 
 // Get API Version from .env (or else assume 1.0)
 const baseUrl = `/api/v${config.apiVersion}`;
